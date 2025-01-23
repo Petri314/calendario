@@ -1,20 +1,34 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario 2025</title>
+    <title>Calendario por Turnos Rotativos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Calendario SSTK 2</h1>
-    <div class="calendar-header">
-        <button id="prev-month">&#9664;</button>
-        <span id="current-month"></span>
-        <button id="next-month">&#9654;</button>
+    <div class="calendar">
+        <div class="header">
+            <button id="prevMonth">«</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">»</button>
+        </div>
+        <table id="calendarTable">
+            <thead>
+                <tr>
+                    <th>Semana</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </div>
-    <div id="calendar"></div>
     <script src="script.js"></script>
 </body>
 </html>
